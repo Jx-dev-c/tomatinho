@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Dia dos Namorados (Futura Namorada)❤️</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 30px;
+      padding: 60px;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 1.5em;
+      line-height: 1.8;
+    }
+    .footer {
+      margin-top: 50px;
+      font-size: 1em;
+      opacity: 0.9;
+    }
+    .heart {
+      font-size: 3em;
+      animation: pulse 1s infinite;
+      margin: 20px 0;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+    .surpresa {
+      margin-top: 40px;
+    }
+    button {
+      background-color: #ffffff;
+      color: #ff4b2b;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #ffe0e0;
+    }
+    .mensagem-surpresa {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+
+  <div class="container">
+    <h1>Feliz Dia dos Namorados, Raio de Sol! ☀️</h1>
+    <p>
+      Desde que te conheci, meu coração entrou em loop infinito de amor!<br>
+      Neste dia <strong><span id="data"></span></strong>, te desejo tudo de bom e que cada momento seja mágico.
+    </p>
+    <p class="heart">❤️</p>
+    <p>
+      Te desejo tudo do bom e do melhor que este mundo possa oferecer.<br>
+      Que esta página seja só mais um detalhe na nossa linda história.
+    </p>
+
+    <div class="surpresa">
+      <button onclick="mostrarMensagem()">Da um clique aqui 💌</button>
+      <div class="mensagem-surpresa" id="mensagemSurpresa">
+        Você não é uma estrela, mas ilumina a minha vida!❤️
+      </div>
+    </div>
+
+    <div class="footer">
+      Feito por quem te admira❤️
+    </div>
+  </div>
+
+  <script>
+    const hoje = new Date();
+    document.getElementById("data").textContent = hoje.toLocaleDateString('pt-BR');
+
+    function mostrarMensagem() {
+      const mensagem = document.getElementById("mensagemSurpresa");
+      mensagem.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
